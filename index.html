@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project2</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                Startup3
+            <div class="nav_container">
+                <div class="logo">
+                    Startup3
+                </div>
+                <div class="link">
+                    <ul>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#" class="btn">Sign Up</a></li>
+                    </ul>
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>    
+                </div>
             </div>
-            <ul>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#" class="btn">Sign Up</a></li>
-            </ul>
         </nav>
 
         <div class="hero">
             <div class="hero_content">
-                <h1>Let’s make design
+                <h1>Let’s make design <br>
                 fast and easy</h1>
                 <p>The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or
                 you can add new blocks from UI Kit.</p>
@@ -30,9 +40,9 @@
             <div class="hero_contact">
                 <div class="hero_contact_input">
                     <input type="email" id="" placeholder="Your email">
-                    <a href="#" class="btn light-blue">Send</a>
+                    <button class="btn light-blue">Send</button>
                 </div>
-                <p>By signing up, you agree to the Terms of Service</p>
+                <small>By signing up, you agree to the Terms of Service</small>
             </div>
         </div>
     </header>
@@ -40,41 +50,45 @@
         <div class="content__container">
             <div class="content__details">
                 <h3>Beautiful Framework</h3>
-                <p>Startup Framework contains components and complex blocks which can easily be integrated into almost any design. All of
-                the components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds
+                <p>Startup Framework contains components and complex blocks which can <br> easily be integrated into almost any design. All of
+                the components are <br> made in the same style, and can easily be integrated into projects, allowing <br> you to create hundreds
                 of solutions.</p>
             </div>
         </div>
     </section>
     <section id="features">
         <div class="container">
-        <div class="features_heading-text">
-            <p class="features_top-text">Easy-to-use</p>
-            <h3 class="features_top-header">Better landing for your startup</h3>
-            <p class="features_description">
-                We have created a new product that will help designers, 
-                developers <br> and companies create websites for their startups
-                quickly and easily.
-            </p>
-        </div>
-        <div class="featured">
-            <div class="featured_content">
-                <div class="content1">
-                    <img src="./images/fa-book.png" alt="">
-                    <h5 class="content1_subtitle">User Guide</h5>
-                    <p class="content1_text">You’ll get a description of each component and <br> learn how to connect and use them.</p>
-                </div>
-                <div class="content2">
-                    <img src="./images/fa-youtube-play.png" alt="">
-                    <h5 class="content2_subtitle">Video Tutorials</h5>
-                    <p class="content2_text">Video tutorials show you how to make a web site <br> for your startup from design to code.</p>
+            <div class="features_heading-text">
+                <p class="features_top-text">Easy-to-use</p>
+                <h3 class="features_top-header">Better landing for your startup</h3>
+                <p class="features_description">
+                    We have created a new product that will help designers, 
+                    developers <br> and companies create websites for their startups
+                    quickly and easily.
+                </p>
+            </div>
+            <div class="featured">
+                <div class="featured_content">
+                    <div class="content1">
+                        <img src="./images/fa-book.png" alt="">
+                        <div class="content1_details">
+                            <h5 class="content1_subtitle">User Guide</h5>
+                            <p class="content1_text">You’ll get a description of each component and <br> learn how to connect and use them.</p>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <img src="./images/fa-youtube-play.png" alt="">
+                        <div class="content2_details">
+                            <h5 class="content2_subtitle">Video Tutorials</h5>
+                            <p class="content2_text">Video tutorials show you how to make a web site <br> for your startup from design to code.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="features_image">
+                <img src="./images/Macbook Pro.png" alt="section_background-image">
+            </div>
         </div>
-        <div class="features_image">
-            <img src="./images/Macbook Pro.png" alt="section_background-image">
-        </div>
-    </div>
     </section>
     <section id="form">
         <div class="form_area">
@@ -261,15 +275,17 @@
     </section>
     <section id="cta">
         <div class="cta_content">
-            <div class="cta_content_heading">
-                <h3>The Second Sneak-Peek of Startup Framework</h3>
-            </div>
-            <div class="cta_content_button">
-                <a href="#" class="btn">Buy on App Store</a>
-            </div>
-            <div class="cta_content_image">
-                <img src="./images/iPhones.png" alt="">
-            </div>
+            <!-- <div class="cta_content_head"> -->
+                <div class="cta_content_heading">
+                    <h3>The Second Sneak-Peek of <br> Startup Framework</h3>
+                </div>
+                <div class="cta_content_button">
+                    <a href="#" class="btn">Buy on App Store</a>
+                </div>
+            <!-- </div> -->
+                <div class="cta_content_image">
+                    <img src="./images/iPhones.png" alt="">
+                </div>
         </div>
     </section>
     <section id="showcase">
@@ -478,62 +494,102 @@
     </section>
     <section id="contact">
         <div class="contact_content">
-            <div class="contact_content_heading">
-                <h3>We'd love to hear from you</h3>
-                <h5>
-                    Please submit your information and a Designmodo representative 
-                    will get in touch with you
-                </h5>
-                <p><img src="./images/fa-phone.png" alt="">
-                    Call sales at +1 555 505 5050</p>
-            </div>
-            <div class="contact_content_body">
-                <div class="contact_form">
-                    <form action="#">
-                        <div class="input_field grid1">
-                            <input type="text" placeholder="Your name" id="contact_name">
-                        </div>
-                        <div class="input_field grid1">
-                            <input type="email" placeholder="Your email" id="contact_email">
-                        </div>
-                        <div class="input_field second-line">
-                            <div class="input_field phone">
-                                <input type="tel" placeholder="Your phone" id="contact_phone">
-                            </div>
-                            <div class="input_field select1">
-                                <select name="contact_reason" id="contact_reason">
-                                    <option value="">Budget</option>
-                                    <option value="low">$10 - $100</option>
-                                    <option value="medium">$100 - $1000</option>
-                                    <option value="high">$1000 - $10000</option>
-                                </select>
-                            </div>
-                            <div class="input_field select2">
-                                <select name="company" id="company">
-                                    <option value="">Company size</option>
-                                    <option value="low">Small</option>
-                                    <option value="medium">Big</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input_field full-width">
-                            <textarea name="Your message" id="message">Your message</textarea>
-                        </div>
-                        <div class="submit">
-                            <a href="#" class="btn">Sean a message</a>
-                        </div>
-                    </form>
+            <div class="contact_content_info">
+                <div class="contact_content_heading">
+                    <h3>We'd love to hear from you</h3>
+                    <h5>
+                        Please submit your information and a Designmodo representative 
+                        will get in touch with you
+                    </h5>
+                    <p><img src="./images/fa-phone.png" alt="">
+                        Call sales at +1 555 505 5050</p>
                 </div>
-                <div class="contact_help">
-                    <h5>Help</h5>
-                    <p>
-                        Need help? Don’t hestiate to ask us somethnig.
-                        Email us directly info@designmodo.com or call us at 1-347-523-34-90. You
-                        can checkout our F.A.Q. and Help page to get more information about our products.
-                    </p>
+                <div class="contact_content_body">
+                    <div class="contact_form">
+                        <form action="#">
+                            <div class="input_flex">
+                                <div class="input_field">
+                                    <input type="text" placeholder="Your name" id="contact_name">
+                                </div>
+                                <div class="input_field">
+                                    <input type="email" placeholder="Your email" id="contact_email">
+                                </div>
+                            </div>
+                            <div class="second-line">
+                                <div class="input_field">
+                                    <input type="tel" placeholder="Your phone" id="contact_phone">
+                                </div>
+                                <div class="input_field budget">
+                                    <input type="text" placeholder="Budget">
+                                </div>
+                                <div class="input_field">
+                                    <input type="text" placeholder="Company size">
+                                </div>
+                            </div>
+                            <div class="input_field full-width">
+                                <textarea name="Your message" id="message">Your message</textarea>
+                            </div>
+                            <div class="submit">
+                                <button class="btn">Send a message</button>
+                            </div>
+                        </form>
                     </div>
-            </div>           
+                    <div class="contact_help">
+                        <h5>Help</h5>
+                        <p>
+                            Need help? Don’t hestiate to ask us somethnig.
+                            Email us directly info@designmodo.com or call us at 1-347-523-34-90. You
+                            can checkout our F.A.Q. and Help page to get more information about our products.
+                        </p>
+                    </div>
+                </div>   
+            </div>        
         </div>
     </section>
+    <footer>
+        <div class="footer_content">
+            <div class="copyrights">
+                <div class="copyright_details">
+                    <h5>
+                        200,000 users registered since January 2015
+                    </h5>
+                    <p>
+                        We’ve created the product that will help your startup to look even better
+                    </p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Your email">
+                        <a href="#" class="btn">Subscribe</a>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <p>
+                        Terms of Service
+                    </p>
+                    <p>
+                        Privacy Policy
+                    </p>
+                </div>
+            </div>
+            <div class="footer_menu1">
+                <p class="heading">About</p>
+                <p>Features</p>
+                <p>Templates</p>
+                <p>Integrations</p>
+                <p>Team</p>
+            </div>
+            <div class="footer_menu2">
+                <p class="heading">Resources</p>
+                <p>Ebooks</p>
+                <p>Infographics</p>
+                <p>Tools</p>
+                <p>Videos</p>
+                <p>Podcasts</p>
+            </div>
+            <div class="footer_buy">
+                <a href="#" class="btn active">Buy App Now</a>
+                <p>or Learn More</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
